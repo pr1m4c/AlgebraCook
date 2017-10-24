@@ -11,6 +11,20 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function () 
+{
     return view('welcome');
 });
+
+Route::get('/recipes', 'RecipesController@index'); //prikaz svih recepata
+
+Route::get('/recipes/add', 'RecipesController@add'); // prikaz obrazca za unos recepta
+Route::post('/recipes/add', 'RecipesController@save'); //spremanje podataka u bazu
+
+Route::get('/recipes/view/{id}', 'RecipesController@view'); //pregled pojedinog recepta
+
+Route::get('/recipes/edit/{id}', 'RecipesController@edit'); //prikaz web obrasca za uređivanje recepta
+Route::post('/recipes/edit', 'RecipesController@update'); //izmjena recepta u bazi
+
+Route::delete('/recipes/del/{id}', 'RecipesController@delete'); //brisanje određeno grecepta
+
