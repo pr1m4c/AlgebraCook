@@ -14,6 +14,6 @@ class Recipe extends Model
 // dohvaća tko je napravio recept
     public function creator()
     {
-    	retrun $this->belongsTo('App\User');
+    	return $this->belongsTo('App\User');
     }
 }

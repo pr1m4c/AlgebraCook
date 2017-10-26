@@ -8,9 +8,9 @@
 	<div class="col-md-10 col-md-offset-1">
 		<div class="panel panel-defaut">
 			<div class="panel-heading">Recepti<br>
-				<a href="{{ url ('recipes/add') }}"></a>
+				<a href="{{ url('recipes/add') }}">
 				<i class="fa fa-btn fa-plus"></i>
-				Dodaj novi recept
+				Dodaj novi recept</a>
 			</div>
 			<div class="panel-body">
 				<ul class="list-group">
