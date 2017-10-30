@@ -38,6 +38,35 @@
 		</div>
 	</div>
 </div>
+@endsection
 
+@section('script')
+<script type="text/javascript">
+	$(function()
+	{
+	 	var scntDiv = $('#ing-coll-fields');
+	 	var i = $('#ing-coll-fields').size() +1;
 
+	 	$('#addLink').click(function()
+	 	{
+	 		$('<div class="form-group">'+
+	 			'<label for="ingredient">Sastojak: <input name="ingredient[]" type="text"></label>'+
+	 			'<a href="#" class="remScnt">'+
+	 			'<i class="fa fa-btn fa-close"></i>Makni sastojak'+
+	 			'</a></div>').appendTo(scntDiv);
+	 		i++;
+	 		return false;
+	 	});
+
+	 	scntDiv.on('click', '.remScnt', function()
+	 	{
+	 		if(i > 2)
+	 		{
+	 			$(this).parents('div .form-group').remove();
+	 			i--;
+	 		}
+	 		return false;
+	 	});
+	});
+</script>
 @endsection
