@@ -23,7 +23,8 @@ class RecipesController extends Controller
 
     public function add()
     {
-        return "Prikaz web obrazca za unos recepta";
+        //return "Prikaz web obrazca za unos recepta";
+        return view('add');
     }
 	
 	public function save (Request $request)

@@ -13,7 +13,7 @@
 
 Route::get('/', function () 
 {
-    return view('welcome');
+    return redirect('/recipes');
 });
 
 Route::get('/recipes', 'RecipesController@index'); //prikaz svih recepata
