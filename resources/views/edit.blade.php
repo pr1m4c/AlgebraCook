@@ -20,7 +20,7 @@
 							{{ $recipe->description }}
 							</textarea>
 						</div>
-						<div class="ing-coll-fields">
+						<div id="ing-coll-fields">
 						@foreach ($recipe->ingredients as $ingredient)
 							<div class="form-group">
 								<label for="ingredient">Sastojak: 
