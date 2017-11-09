@@ -47,3 +47,4 @@ Route::post('/recipes/edit', 'RecipesController@update'); //izmjena recepta u ba
 
 Route::get('/recipes/del/{id}', 'RecipesController@delete'); //brisanje određeno grecepta
 
+Route::get('/sastojci', 'RecipesController@viewsastojak'); //svi sastojci iz baze

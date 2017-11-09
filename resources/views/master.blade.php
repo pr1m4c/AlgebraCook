@@ -39,6 +39,9 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/recipes') }}">Recepti</a></li>
                 </ul>
+                 <ul class="nav navbar-nav">
+                    <li><a href="{{ url('/sastojci') }}">Sastojci</a></li>
+                </ul>
 
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::guest())
