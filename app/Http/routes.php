@@ -45,5 +45,5 @@ Route::get('/recipes/view/{id}', 'RecipesController@view'); //pregled pojedinog 
 Route::get('/recipes/edit/{id}', 'RecipesController@edit'); //prikaz web obrasca za uređivanje recepta
 Route::post('/recipes/edit', 'RecipesController@update'); //izmjena recepta u bazi
 
-Route::delete('/recipes/del/{id}', 'RecipesController@delete'); //brisanje određeno grecepta
+Route::get('/recipes/del/{id}', 'RecipesController@delete'); //brisanje određeno grecepta
 

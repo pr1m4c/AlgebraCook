@@ -139,6 +139,11 @@ class RecipesController extends Controller
      */
     public function delete($id)
     {
-        return "Brisanje recepta iz baze ID: " . $id;
+        //brisanje
+        Recipe::find($id)->delete();
+
+        //vraćanje na početnu
+        return redirect()->action('RecipesController@index');
+        
     }
 }

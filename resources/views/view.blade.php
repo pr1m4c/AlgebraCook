@@ -13,6 +13,10 @@
 					 <a href="/recipes/edit/{{ $recipe->id }}">
 						<i class="fa fa-btn fa-pencil"></i> Uredi recept
 					</a>
+					<!-- Brisanje recpta -->
+					 <a href="/recipes/del/{{ $recipe->id }}">
+						<i class="fa fa-btn fa-window-close"></i> Izbriši recept
+					</a>
 					@endif
 				</div>
 				<div class="panel-body">
