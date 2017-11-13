@@ -147,8 +147,8 @@ class RecipesController extends Controller
         
     }
 
-    public function viewsastojak()
+    public function viewSastojci()
     {
-        return view('viewsastojci', array('ingredient' => Ingredient::get()) );
+        return view('viewsastojci', array('ingredients' => Ingredient::get()) );
     }
 }

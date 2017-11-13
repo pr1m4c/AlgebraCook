@@ -4,8 +4,7 @@
 
 @section('content')
 
-@foreach($ingredients as $ingredient)
-	{{ $ingredient->name }}
-@endforeach
+Ime ulogiranog korisnika: {{ Auth::user()->name }} <br>
+
 
 @endsection
