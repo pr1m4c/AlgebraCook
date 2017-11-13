@@ -20,9 +20,18 @@ class UsersController extends Controller
     {
         $this->middleware('auth');
     }
-    
-    public function profile()
+
+    public function profile(Request $request)
     {
+        if ($request->isMethod('post')) 
+        {
+            $this->validate($request, array('password' => 'required|min:6'));
+
+            $user=auth()->user();
+            $user->password = bcrypt($request->all()['password']);
+            $user->save();
+        }
+
         return view('profile');
     }
 

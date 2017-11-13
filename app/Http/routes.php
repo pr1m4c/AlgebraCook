@@ -51,3 +51,4 @@ Route::get('/sastojci', 'RecipesController@viewSastojci'); //svi sastojci iz baz
 
 //ruta za mijenjanje pass
 Route::get('/profile', 'UsersController@profile');
+Route::post('/profile', 'UsersController@profile');
