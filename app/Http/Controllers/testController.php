@@ -15,4 +15,9 @@ class testController extends Controller
         return view('test', ['varijabla' => 'vrijednost ove varijable']);
     }
 
+    public function index()
+    {
+    	return view('test');
+    }
+
 }

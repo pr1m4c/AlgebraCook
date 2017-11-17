@@ -35,6 +35,9 @@ Route::get('/home', function ()
     return redirect('/recipes');
 });
 
+//tetsna ruta
+Route::get('/algebra', 'testController@index');
+
 Route::get('/recipes', 'RecipesController@index'); //prikaz svih recepata
 
 Route::get('/recipes/add', 'RecipesController@add'); // prikaz obrazca za unos recepta
